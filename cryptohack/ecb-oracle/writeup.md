@@ -42,7 +42,7 @@ By adding verified characters one by one shall be able to get the flag. As the l
 def bruteforce():
     flag = ''
     total = 32 - 1
-    alphabet = '_'+'@'+'}'+string.digits+string.ascii_lowercase+string.ascii_uppercase
+    alphabet = '_'+'{'+'}'+string.digits+string.ascii_lowercase+string.ascii_uppercase
 
     while True:
         payload = '1' * (total-len(flag))
@@ -67,4 +67,4 @@ def bruteforce():
 
 Waited for a while the flag came out to be ``crypto{p3n6u1n5_h473_3cb}``.
 
-The full code is [here](https://github.com/onealmond/hacking-lab/blob/master/cryptohack/ecb-oracle/ecb-oracle.py).
+The full code is [here](https://github.com/onealmond/hacking-lab/blob/master/cryptohack/ecb-oracle/ecb_oracle.py).
